@@ -1,7 +1,7 @@
-ETL Pipeline Framework
+**ETL Pipeline Framework**
 Este proyecto es un robusto motor de procesamiento de datos Extract, Transform, and Load (ETL) diseñado para gestionar múltiples pipelines de forma modular y escalable. Permite la ingesta de datos, validación de reglas de negocio y carga de resultados con un sistema de reportes automático.
 
-📂 Estructura del Proyecto
+**Estructura del Proyecto**
 ```
 .
 ├── main.py                 # Punto de entrada principal
@@ -18,7 +18,7 @@ Este proyecto es un robusto motor de procesamiento de datos Extract, Transform, 
 └── reports/                # Logs y métricas de ejecución (Auto-generados)
 ```
 
-Componentes por Pipeline
+**Componentes por Pipeline**
 Cada pipeline (ej. home_rental, diabetes) sigue una arquitectura interna estandarizada:
 
 inbound/: Carpeta para archivos CSV recibidos y pendientes de procesar.
@@ -33,18 +33,18 @@ transform.py & transform_brules.py: Aplicación de reglas de negocio (Business R
 
 load.py & load_dataframe.py: Destino final de los datos procesados.
 
-Cómo empezar
-1. Requisitos
+**Cómo empezar**
+Requisitos
 Asegúrate de tener Python instalado y las dependencias necesarias:
-
+```
 pip install pandas
-
-2. Ejecución
+```
+Ejecución
 Para correr el motor y procesar los datos, simplemente ejecuta el archivo principal:
-
+```
 python main.py
-
-Flujo de Datos
+```
+**Flujo de Datos**
 Extract: El sistema busca archivos en inbound/ y valida su integridad.
 Transform: Se aplican filtros y reglas lógicas definidas en transform_brules.py.
 Load: El resultado se guarda en output/ y el origen se mueve a processed/.
