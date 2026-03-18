@@ -2,7 +2,7 @@ ETL Pipeline Framework
 Este proyecto es un robusto motor de procesamiento de datos Extract, Transform, and Load (ETL) diseñado para gestionar múltiples pipelines de forma modular y escalable. Permite la ingesta de datos, validación de reglas de negocio y carga de resultados con un sistema de reportes automático.
 
 📂 Estructura del Proyecto
-
+```
 .
 ├── main.py                 # Punto de entrada principal
 ├── core/                   # Utilerías globales y motor del framework
@@ -16,6 +16,7 @@ Este proyecto es un robusto motor de procesamiento de datos Extract, Transform, 
 │   ├── ice_cream/          # Pipeline 3: Predicción de ventas
 │   └── penguins/           # Pipeline 4: Clasificación de pingüinos
 └── reports/                # Logs y métricas de ejecución (Auto-generados)
+```
 
 Componentes por Pipeline
 Cada pipeline (ej. home_rental, diabetes) sigue una arquitectura interna estandarizada:
